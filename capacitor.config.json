@@ -1,0 +1,9 @@
+{
+  "appId": "com.reibry.app",
+  "appName": "REIBRY",
+  "webDir": "native-web",
+  "loggingBehavior": "none",
+  "server": { "url": "https://reibry.vercel.app", "cleartext": false, "errorPath": "offline.html" },
+  "android": { "allowMixedContent": false, "webContentsDebuggingEnabled": false },
+  "plugins": { "CapacitorCookies": { "enabled": false }, "CapacitorHttp": { "enabled": false } }
+}

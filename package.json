@@ -1,0 +1,45 @@
+{
+  "name": "reibry",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.116.0",
+    "lucide-react": "1.47.0",
+    "next": "16.3.5",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "0.0.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.5.2",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "22.20.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "9.39.5",
+    "eslint-config-next": "16.3.5",
+    "tailwindcss": "4.3.3",
+    "typescript": "6.0.3"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "next typegen && tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/intelligence-reliability.test.ts tests/native-session-reliability.test.ts tests/account-reliability.test.ts tests/native-auth.test.ts tests/share-capture-reliability.test.ts tests/pwa-share-target.test.ts tests/tiktok-source.test.ts tests/auth-next-destination.test.ts tests/capture-dedupe.test.ts tests/contracts.test.ts tests/evidence-schema-regression.test.ts tests/gemini-provider.test.ts tests/intelligence-quality.test.ts tests/integration-business.test.ts tests/life-persistence.test.ts tests/memory-detail.test.ts tests/memory-library.test.ts tests/nvidia-error-classification.test.ts tests/nvidia-multimodal.test.ts tests/nvidia-provider.test.ts tests/relative-date.test.ts tests/source-enrichment.test.ts tests/semantic-admin.test.ts tests/thumbnail-visual.test.ts tests/ask-ranking.test.ts tests/semantic-provenance.test.ts tests/home-agent.test.ts tests/stage-b.test.ts tests/supabase-search.test.ts",
+    "verify:supabase": "node scripts/verify-supabase.mjs",
+    "verify:auth": "node scripts/verify-auth-flow.mjs",
+    "verify:api": "node scripts/verify-api-flow.mjs",
+    "seed:demo": "node scripts/seed-demo.mjs",
+    "verify:nvidia": "node --experimental-strip-types scripts/verify-nvidia.ts"
+  },
+  "type": "module"
+}

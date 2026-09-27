@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">REIBRY</string>
+    <string name="title_activity_main">REIBRY</string>
+    <string name="package_name">com.reibry.app</string>
+    <string name="custom_url_scheme">com.reibry.app</string>
+</resources>

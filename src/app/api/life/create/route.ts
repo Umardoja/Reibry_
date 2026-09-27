@@ -1,0 +1,1 @@
+import { jsonHandler } from "@/lib/api/integration-handler"; import { parseAndSaveLife } from "@/lib/integration/orchestrator"; export const POST=jsonHandler((b)=>{const v=b&&typeof b==='object'?b as Record<string,unknown>:{}; return parseAndSaveLife({text:String(v.text||""),timezone:String(v.timezone||"UTC")});});

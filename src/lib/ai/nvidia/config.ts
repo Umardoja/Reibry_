@@ -1,0 +1,3 @@
+import { IntegrationError } from "../../integration/errors.ts";
+export const NVIDIA_BASE_URL="https://integrate.api.nvidia.com/v1";
+export function nvidiaConfig(){const apiKey=process.env.NVIDIA_API_KEY;if(!apiKey)throw new IntegrationError("AI_UNAVAILABLE","NVIDIA_API_KEY is not configured.");const parsed=Number(process.env.NVIDIA_REQUEST_TIMEOUT_MS||60000);return {apiKey,requestTimeoutMs:Number.isFinite(parsed)&&parsed>=5000&&parsed<=120000?parsed:60000,reasoningModel:process.env.NVIDIA_REASONING_MODEL||"nvidia/nemotron-3.5-lightning-30b-a3b",multimodalModel:process.env.NVIDIA_MULTIMODAL_MODEL||"nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",embeddingModel:process.env.NVIDIA_EMBEDDING_MODEL||"nvidia/nemotron-3-embed-1b"};}
