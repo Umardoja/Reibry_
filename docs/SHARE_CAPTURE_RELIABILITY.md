@@ -30,7 +30,7 @@ completion (including partial) and failure use the same pending-share tag. The
 worker validates same-origin destinations and exact Memory IDs; failure taps
 return to the retained pending share for explicit retry.
 
-## Local QA, 22 September 2026
+## Local QA, 27 September 2026
 
 - Real vt.tiktok.com share: one POST, HTTP 200, historical failed record recovered
   as partial; no automatic Detail navigation.

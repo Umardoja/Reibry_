@@ -1,6 +1,6 @@
 # Android Capture / Share Target / notification reliability
 
-## Diagnosis (22 September 2026)
+## Diagnosis (27 September 2026)
 
 The public HTTPS production endpoint `https://reibry.vercel.app/manifest.webmanifest` returned HTTP 200 with **no `share_target` property**, no `id`, and only `/icons/icon.svg`. Production HTML correctly referenced `/manifest.webmanifest`. Thus the deployed manifest does not register an Android share destination. The installed phone package/cache could additionally be stale; it was not inspected remotely.
 
